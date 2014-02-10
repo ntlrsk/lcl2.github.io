@@ -8,10 +8,10 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/font-awesome-ie7.css" rel="stylesheet">
-    <link href="css/customizations.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="../css/customizations.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -19,11 +19,11 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="http://learn.media.mit.edu/assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     
       <script type="text/javascript">
   
@@ -88,7 +88,7 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: url("http://learn.media.mit.edu/img/ajax-bar.gif");
+    background: url("../img/ajax-bar.gif");
     background-position: center;
     background-repeat: no-repeat; }
   .item .descriptor, .item .country {
@@ -152,20 +152,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jstz/jstz.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jstz/jstz.min.js"></script>
 
 
-    <script src="js/jquery.masonry.min.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="../js/jquery.masonry.min.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
         <script>    
         $(function() {
             var templates = {
                 'item': '<div class="item"> \
                     <div class="loader"></div> \
-                    <a href="http://learn.media.mit.edu/&lt;%=&#32;item.href&#32;%&gt;" target="_blank"> \
-                        <img class="thumbnail" alt="<%= item.name %>" onclick="<%= item.onclick %>" src="http://learn.media.mit.edu/&lt;%=&#32;item.src&#32;%&gt;"> \
+                    <a href="<%= item.href %>" target="_blank"> \
+                        <img class="thumbnail" alt="<%= item.name %>" onclick="<%= item.onclick %>" src="<%= item.src %>"> \
                     </a> \
                     <span class="descriptor"> \
                         <%= item.name %> \
@@ -255,13 +255,13 @@ var videos = [{"name":"Maria Beatrice Rapaccini","href":"http:\/\/www.youtube.co
           <a class="brand brand2" href="http://www.media.mit.edu/" target="_blank"></a>
           <div class="nav-collapse collapse">
           <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Overview</a></li>
-            <li><a href="syllabus.html">Syllabus</a></li>
-            <li class="active"><a href="participants.html">Participants</a></li>
-            <li><a href="emails.html">Weekly Emails</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./course.html">Overview</a></li>
+            <li><a href="./syllabus.html">Syllabus</a></li>
+            <li class="active"><a href="./participants.html">Participants</a></li>
+            <li><a href="./emails.html">Weekly Emails</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
             <li><a href="https://plus.google.com/u/1/communities/106132864609383396284" target="_blank">G+ Community</a></li>
           </ul>
           </div>
