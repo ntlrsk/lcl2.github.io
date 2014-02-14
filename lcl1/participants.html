@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Participants - Learning Creative Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="../css/customizations.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    
+      <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37881026-1']);
+    _gaq.push(['_setDomainName', 'learn.media.mit.edu']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+    <style>
+#container {
+  text-align: center;
+  overflow: auto;
+  margin: 20px auto; 
+  overflow: hidden;
+  }
+
+#navigator {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 75px;
+  background-color: white;
+  box-shadow: 0px -3px 3px #888888;
+  -moz-box-shadow: 0px -3px 3px #888888;
+  -webkit-box-shadow: 0px -3px 3px #888888; }
+
+#header {
+  font-size: 80px;
+  color: #333;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  text-shadow: 0px 1px -2px white; }
+
+.item {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 7px;
+  padding: 10px;
+  background-color: white;
+  width: 220px;
+  box-shadow: 0px 1px 3px #bbbbbb;
+  -moz-box-shadow: 0px 1px 3px #bbbbbb;
+  -webkit-box-shadow: 0px 1px 3px #bbbbbb; }
+  .item a {
+    display: block;
+    height: 165px;
+    width: 220px;
+    position: relative; }
+  .item .loader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url("../img/ajax-bar.gif");
+    background-position: center;
+    background-repeat: no-repeat; }
+  .item .descriptor, .item .country {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 0px 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .item .descriptor {
+    font-size: 11px;
+    margin-top: 8px;
+    min-height: 12px; 
+    color: black; }
+  .item .country {
+    margin-top: 2px;
+    font-size: 9px;
+    color: #777;
+    font-variant: italic;
+    min-height: 11px; }
+  .item .thumbnail {
+    cursor: pointer;
+    margin-top: -30px;
+    opacity: 0; }
+  .item .thumbnail, .item iframe {
+    vertical-align: bottom;
+    height: 165px;
+    width: 220px; }
+  .item:after {
+    position: absolute;
+    height: 20px;
+    bottom: 5px;
+    content: "";
+    left: 5%;
+    width: 90%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+    z-index: -1; }
+  .item:before {
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    content: "";
+    left: 5%;
+    width: 90%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 0 -7px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -7px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 -7px 10px rgba(0, 0, 0, 0.4);
+    z-index: -1; }
+    </style>   
+               
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jstz/jstz.min.js"></script>
+
+
+    <script src="../js/jquery.masonry.min.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+        <script>    
+        $(function() {
+            var templates = {
+                'item': '<div class="item"> \
+                    <div class="loader"></div> \
+                    <a href="<%= item.href %>" target="_blank"> \
+                        <img class="thumbnail" alt="<%= item.name %>" onclick="<%= item.onclick %>" src="<%= item.src %>"> \
+                    </a> \
+                    <span class="descriptor"> \
+                        <%= item.name %> \
+                    </span> \
+                    <span class="country"> \
+                        <%= item.location %> \
+                    </span> \
+                </div>'
+            }; 
+
+            // compile templates
+            window.templates = {};
+            for (var template in templates)
+                window.templates[template] = _.template(templates[template]);
+var videos = [{"name":"Maria Beatrice Rapaccini","href":"http:\/\/www.youtube.com\/watch?v=iB2d_5dRusU","location":"Ancona, Italy","onclick":"return youtube(this, 'iB2d_5dRusU')","src":"https:\/\/img.youtube.com\/vi\/iB2d_5dRusU\/0.jpg"},{"name":"Jos\u00e9 Ivan Mayer de Aquino","href":"http:\/\/www.youtube.com\/watch?v=CJl-rg4UNHY&feature=youtu.be","location":"Bras\u00edlia-DF, Brazil","onclick":"return youtube(this, 'CJl-rg4UNHY')","src":"https:\/\/img.youtube.com\/vi\/CJl-rg4UNHY\/0.jpg"},{"name":"Mike","href":"http:\/\/www.youtube.com\/watch?v=IvcJYwcWxpU&feature=youtu.be","location":"Alaska","onclick":"return youtube(this, 'IvcJYwcWxpU')","src":"https:\/\/img.youtube.com\/vi\/IvcJYwcWxpU\/0.jpg"},{"name":"Sheri Edwards","href":"http:\/\/www.youtube.com\/watch?v=r5IZskZ7_KA&feature=youtu.be","location":"Coulee Dam, WA","onclick":"return youtube(this, 'r5IZskZ7_KA')","src":"https:\/\/img.youtube.com\/vi\/r5IZskZ7_KA\/0.jpg"},{"name":"Anders Berggren","href":"http:\/\/www.youtube.com\/watch?v=1lRuWvqEvT4","location":"Smedjebacken, Sweden","onclick":"return youtube(this, '1lRuWvqEvT4')","src":"https:\/\/img.youtube.com\/vi\/1lRuWvqEvT4\/0.jpg"},{"name":"Isabelle Ayel (isayel)","href":"http:\/\/youtu.be\/DGIRoGjPtqo","location":"Zaragoza (Spain)","onclick":"return youtube(this, 'DGIRoGjPtqo')","src":"https:\/\/img.youtube.com\/vi\/DGIRoGjPtqo\/0.jpg"},{"name":"Anna","href":"https:\/\/vimeo.com\/59915391","location":"Helsinki, Finland + Berkeley, CA","onclick":"return vimeo(this, '59915391')","src":"http:\/\/b.vimeocdn.com\/ts\/416\/634\/416634969_100.jpg"},{"name":"Gustavo Saravia","href":"http:\/\/youtu.be\/D1T604ZPXww","location":"Peru","onclick":"return youtube(this, 'D1T604ZPXww')","src":"https:\/\/img.youtube.com\/vi\/D1T604ZPXww\/0.jpg"},{"name":"Rita Araujo","href":"https:\/\/www.youtube.com\/watch?v=4_32zNH4RQQ","location":"S\u00e3o Paulo - Brazil","onclick":"return youtube(this, '4_32zNH4RQQ')","src":"https:\/\/img.youtube.com\/vi\/4_32zNH4RQQ\/0.jpg"},{"name":"Adriano Parracciani","href":"http:\/\/youtu.be\/psIpJTaT9DU","location":"Rome, Italy","onclick":"return youtube(this, 'psIpJTaT9DU')","src":"https:\/\/img.youtube.com\/vi\/psIpJTaT9DU\/0.jpg"},{"name":"Lokpriya","href":"https:\/\/www.youtube.com\/watch?v=3TdMcVgsqEo","location":"Nepal","onclick":"return youtube(this, '3TdMcVgsqEo')","src":"https:\/\/img.youtube.com\/vi\/3TdMcVgsqEo\/0.jpg"},{"name":"Carlos Opitz","href":"https:\/\/vimeo.com\/59933323","location":"Madrid, Spain","onclick":"return vimeo(this, '59933323')","src":"http:\/\/b.vimeocdn.com\/ts\/416\/860\/416860557_100.jpg"},{"name":"L\u00edlian Moreira","href":"http:\/\/www.youtube.com\/watch?v=2K8HVQ8CIIE&feature=youtu.be","location":"Juiz de Fora, Brazil","onclick":"return youtube(this, '2K8HVQ8CIIE')","src":"https:\/\/img.youtube.com\/vi\/2K8HVQ8CIIE\/0.jpg"},{"name":"Bill Rogers","href":"http:\/\/www.youtube.com\/watch?v=XVupQYORuS4&feature=share&list=UU8gq90F3qlMHdgIYd73bY0A","location":"Portsmouth, NH","onclick":"return youtube(this, 'XVupQYORuS4')","src":"https:\/\/img.youtube.com\/vi\/XVupQYORuS4\/0.jpg"},{"name":"Laurie Bartels","href":"https:\/\/www.youtube.com\/watch?v=cLInWuh9V24","location":"Mamaroneck, NY","onclick":"return youtube(this, 'cLInWuh9V24')","src":"https:\/\/img.youtube.com\/vi\/cLInWuh9V24\/0.jpg"},{"name":"Maja Dakic-Brkovic","href":"http:\/\/youtu.be\/qs8o7BlTMhY","location":"Serbia, Europe","onclick":"return youtube(this, 'qs8o7BlTMhY')","src":"https:\/\/img.youtube.com\/vi\/qs8o7BlTMhY\/0.jpg"},{"name":"Bogdan Logofatu vs ECTS","href":"http:\/\/youtu.be\/GtPTB2lnvDA","location":"Bucharest, Romania","onclick":"return youtube(this, 'GtPTB2lnvDA')","src":"https:\/\/img.youtube.com\/vi\/GtPTB2lnvDA\/0.jpg"},{"name":"Linda Germain","href":"http:\/\/www.youtube.com\/watch?v=51bNpNfkzOM","location":"Massachusetts, USA","onclick":"return youtube(this, '51bNpNfkzOM')","src":"https:\/\/img.youtube.com\/vi\/51bNpNfkzOM\/0.jpg"},{"name":"Rob","href":"http:\/\/www.youtube.com\/watch?v=qArExJdUBkw","location":"","onclick":"return youtube(this, 'qArExJdUBkw')","src":"https:\/\/img.youtube.com\/vi\/qArExJdUBkw\/0.jpg"},{"name":"V\u00e2nia","href":"http:\/\/www.youtube.com\/watch?v=Axcn13TaeFk&feature=youtu.be","location":"Brazil","onclick":"return youtube(this, 'Axcn13TaeFk')","src":"https:\/\/img.youtube.com\/vi\/Axcn13TaeFk\/0.jpg"},{"name":"Darek Kapica","href":"http:\/\/youtu.be\/3jiMSGpbvwY","location":"Poland","onclick":"return youtube(this, '3jiMSGpbvwY')","src":"https:\/\/img.youtube.com\/vi\/3jiMSGpbvwY\/0.jpg"},{"name":"Karen Thompson","href":"http:\/\/www.youtube.com\/watch?v=Kyp7CRmnEZY&feature=youtu.be","location":"Springfield, IL","onclick":"return youtube(this, 'Kyp7CRmnEZY')","src":"https:\/\/img.youtube.com\/vi\/Kyp7CRmnEZY\/0.jpg"},{"name":"Qazi Fazli Azeem","href":"http:\/\/www.youtube.com\/watch?v=N_ruhSiLcM0&feature=youtu.be","location":"Boston, MA","onclick":"return youtube(this, 'N_ruhSiLcM0')","src":"https:\/\/img.youtube.com\/vi\/N_ruhSiLcM0\/0.jpg"},{"name":"Harsh Rao","href":"http:\/\/youtu.be\/1mNPKCnCPPY","location":"Mumbai","onclick":"return youtube(this, '1mNPKCnCPPY')","src":"https:\/\/img.youtube.com\/vi\/1mNPKCnCPPY\/0.jpg"},{"name":"Lindsay Balfour","href":"http:\/\/www.youtube.com\/watch?v=_--FWk_5MVU&feature=youtu.be","location":"Ann Arbor, MI ","onclick":"return youtube(this, '_--FWk_5MVU')","src":"https:\/\/img.youtube.com\/vi\/_--FWk_5MVU\/0.jpg"},{"name":"nazerah99","href":"http:\/\/www.youtube.com\/watch?v=I6HeiQhK3uw","location":"Toronto","onclick":"return youtube(this, 'I6HeiQhK3uw')","src":"https:\/\/img.youtube.com\/vi\/I6HeiQhK3uw\/0.jpg"},{"name":"Susan Lieberman","href":"http:\/\/www.youtube.com\/watch?v=Fry75d_zf3U","location":"Toronto, Canada","onclick":"return youtube(this, 'Fry75d_zf3U')","src":"https:\/\/img.youtube.com\/vi\/Fry75d_zf3U\/0.jpg"},{"name":"Sarah","href":"https:\/\/www.youtube.com\/watch?v=5-LLevU7W2g","location":"Virginia, USA","onclick":"return youtube(this, '5-LLevU7W2g')","src":"https:\/\/img.youtube.com\/vi\/5-LLevU7W2g\/0.jpg"},{"name":"Edward Iglesias","href":"http:\/\/youtu.be\/xxjU2F5PzzY","location":"Connecticut","onclick":"return youtube(this, 'xxjU2F5PzzY')","src":"https:\/\/img.youtube.com\/vi\/xxjU2F5PzzY\/0.jpg"},{"name":"Paul","href":"https:\/\/www.youtube.com\/watch?v=JU9CERkHFYU","location":"Hereford, England","onclick":"return youtube(this, 'JU9CERkHFYU')","src":"https:\/\/img.youtube.com\/vi\/JU9CERkHFYU\/0.jpg"},{"name":"Barbara Brooke-Reese","href":"http:\/\/vimeo.com\/59812857","location":"Sebastian, FL","onclick":"return vimeo(this, '59812857')","src":"http:\/\/b.vimeocdn.com\/ts\/415\/882\/415882265_100.jpg"},{"name":"Delphine Woda","href":"http:\/\/www.youtube.com\/watch?v=JOiUR4FdUfM","location":"Israel","onclick":"return youtube(this, 'JOiUR4FdUfM')","src":"https:\/\/img.youtube.com\/vi\/JOiUR4FdUfM\/0.jpg"},{"name":"adorpheus","href":"http:\/\/www.youtube.com\/watch?v=D00qvuzYd_0&feature=youtu.be","location":"London, UK","onclick":"return youtube(this, 'D00qvuzYd_0')","src":"https:\/\/img.youtube.com\/vi\/D00qvuzYd_0\/0.jpg"},{"name":"Natalia","href":"https:\/\/www.youtube.com\/watch?v=_x1QnvxyUaM","location":"Newport Beach, CA","onclick":"return youtube(this, '_x1QnvxyUaM')","src":"https:\/\/img.youtube.com\/vi\/_x1QnvxyUaM\/0.jpg"},{"name":"Richard Mitchell","href":"https:\/\/www.youtube.com\/watch?feature=player_embedded&v=ROphajcShSc","location":"UK","onclick":"return youtube(this, 'ROphajcShSc')","src":"https:\/\/img.youtube.com\/vi\/ROphajcShSc\/0.jpg"},{"name":"Qazi Fazli Azeem","href":"http:\/\/www.youtube.com\/watch?v=MDTs11yoVk4","location":"Boston, MA","onclick":"return youtube(this, 'MDTs11yoVk4')","src":"https:\/\/img.youtube.com\/vi\/MDTs11yoVk4\/0.jpg"},{"name":"lianne","href":"http:\/\/www.youtube.com\/watch?v=WvACdxqt_8I&feature=youtu.be","location":"Piitsburgh","onclick":"return youtube(this, 'WvACdxqt_8I')","src":"https:\/\/img.youtube.com\/vi\/WvACdxqt_8I\/0.jpg"},{"name":"Alexis","href":"http:\/\/youtu.be\/gpm098D2Sw4","location":"Palo Alto","onclick":"return youtube(this, 'gpm098D2Sw4')","src":"https:\/\/img.youtube.com\/vi\/gpm098D2Sw4\/0.jpg"},{"name":"Carolina","href":"https:\/\/plus.google.com\/photos\/111946850366857674006\/albums\/5844850613957700193\/5844850618627053266?authkey=CMf6lpmD1LqXbA&sqi=106132864609383396284&sqsi=a92a1523-bbd3-455a-bbbc-0e83a28fea1d","location":"Art Institute of Chicago, Chicago IL","onclick":"","src":"play-button.jpg"},{"name":"Fred Bartels","href":"http:\/\/www.youtube.com\/watch?v=v3vxd72gMHQ&feature=share&list=UUgNxKVM08pTsrx1aDZPwb8Q","location":"Mamaroneck, NY","onclick":"return youtube(this, 'v3vxd72gMHQ')","src":"https:\/\/img.youtube.com\/vi\/v3vxd72gMHQ\/0.jpg"},{"name":"Bruno Pinaud","href":"http:\/\/www.youtube.com\/watch?v=jknYuMmuIOQ","location":"Brazil","onclick":"return youtube(this, 'jknYuMmuIOQ')","src":"https:\/\/img.youtube.com\/vi\/jknYuMmuIOQ\/0.jpg"},{"name":"Chris Frauenberger","href":"https:\/\/vimeo.com\/59646334","location":"Brussels, Belgium","onclick":"return vimeo(this, '59646334')","src":"http:\/\/b.vimeocdn.com\/ts\/414\/624\/414624017_100.jpg"},{"name":"Antonio Nesic","href":"http:\/\/www.youtube.com\/watch?v=-FxYt63fZB8","location":"Ploce, Croatia","onclick":"return youtube(this, '-FxYt63fZB8')","src":"https:\/\/img.youtube.com\/vi\/-FxYt63fZB8\/0.jpg"},{"name":"Helena Capela","href":"http:\/\/youtu.be\/6UUaJOoNO4E","location":"Portugal","onclick":"return youtube(this, '6UUaJOoNO4E')","src":"https:\/\/img.youtube.com\/vi\/6UUaJOoNO4E\/0.jpg"},{"name":"Allen Lee","href":"http:\/\/www.youtube.com\/watch?v=IQQlheUbF58","location":"Yukon, Canada","onclick":"return youtube(this, 'IQQlheUbF58')","src":"https:\/\/img.youtube.com\/vi\/IQQlheUbF58\/0.jpg"},{"name":"Paul Laplante","href":"http:\/\/youtu.be\/aunRzkST2yI","location":"Montreal","onclick":"return youtube(this, 'aunRzkST2yI')","src":"https:\/\/img.youtube.com\/vi\/aunRzkST2yI\/0.jpg"},{"name":"Hiram Hernandez","href":"http:\/\/www.youtube.com\/watch?v=mUgeK9qeflc&feature=youtu.be","location":"Mexico","onclick":"return youtube(this, 'mUgeK9qeflc')","src":"https:\/\/img.youtube.com\/vi\/mUgeK9qeflc\/0.jpg"},{"name":"Jennifer Adams","href":"http:\/\/youtu.be\/ZsDlEMj1X_8","location":"Stony Brook, New York, USA","onclick":"return youtube(this, 'ZsDlEMj1X_8')","src":"https:\/\/img.youtube.com\/vi\/ZsDlEMj1X_8\/0.jpg"},{"name":"Sonja Samuda","href":"https:\/\/vimeo.com\/59613628","location":"Norway","onclick":"return vimeo(this, '59613628')","src":"http:\/\/b.vimeocdn.com\/ts\/414\/370\/414370032_100.jpg"},{"name":"Barbara Schroeder","href":"http:\/\/youtu.be\/ZrQxjp7rQzg","location":"Boise, ID","onclick":"return youtube(this, 'ZrQxjp7rQzg')","src":"https:\/\/img.youtube.com\/vi\/ZrQxjp7rQzg\/0.jpg"},{"name":"Elaine","href":"http:\/\/www.youtube.com\/watch?v=OM9wH9dEshw","location":"Texas","onclick":"return youtube(this, 'OM9wH9dEshw')","src":"https:\/\/img.youtube.com\/vi\/OM9wH9dEshw\/0.jpg"},{"name":"Jennifer Qiao","href":"http:\/\/youtu.be\/FDOkTdldWTg","location":"New Haven, CT ","onclick":"return youtube(this, 'FDOkTdldWTg')","src":"https:\/\/img.youtube.com\/vi\/FDOkTdldWTg\/0.jpg"},{"name":"damiana guedes","href":"http:\/\/www.youtube.com\/watch?v=FIkUmzLFVio&feature=player_embedded#!","location":"Portugal","onclick":"return youtube(this, 'FIkUmzLFVio')","src":"https:\/\/img.youtube.com\/vi\/FIkUmzLFVio\/0.jpg"},{"name":"Joek van Montfort","href":"https:\/\/vimeo.com\/59575281","location":"Amsterdam, The Netherlands","onclick":"return vimeo(this, '59575281')","src":"http:\/\/b.vimeocdn.com\/ts\/414\/099\/414099504_100.jpg"},{"name":"Patr\u00edcia Rocha Rodrigues","href":"http:\/\/www.youtube.com\/watch?v=Dg1JPnIofjU","location":"Salvador-Brazil","onclick":"return youtube(this, 'Dg1JPnIofjU')","src":"https:\/\/img.youtube.com\/vi\/Dg1JPnIofjU\/0.jpg"},{"name":"Teresa Martinho Marques","href":"http:\/\/youtu.be\/L4pgwEtK0Ak","location":"Portugal - Set\u00fabal","onclick":"return youtube(this, 'L4pgwEtK0Ak')","src":"https:\/\/img.youtube.com\/vi\/L4pgwEtK0Ak\/0.jpg"},{"name":"Michelle","href":"http:\/\/youtu.be\/y9s-nbF1G8w","location":"London, Ontario, Canada","onclick":"return youtube(this, 'y9s-nbF1G8w')","src":"https:\/\/img.youtube.com\/vi\/y9s-nbF1G8w\/0.jpg"},{"name":"sorJacson","href":"http:\/\/youtu.be\/fb7bem1JBzE","location":"Novo Hamburgo - Brazil","onclick":"return youtube(this, 'fb7bem1JBzE')","src":"https:\/\/img.youtube.com\/vi\/fb7bem1JBzE\/0.jpg"},{"name":"Joe Raimondo","href":"http:\/\/www.youtube.com\/watch?v=7xiTKNVOYPw","location":"New Jersey","onclick":"return youtube(this, '7xiTKNVOYPw')","src":"https:\/\/img.youtube.com\/vi\/7xiTKNVOYPw\/0.jpg"},{"name":"Saurabh Datta","href":"https:\/\/plus.google.com\/photos\/101949427527824629269\/albums\/5844051290322376065\/5844051291903985858?sqi=106132864609383396284&sqsi=a92a1523-bbd3-455a-bbbc-0e83a28fea1d&authkey=CNWO6NaquLmlTw","location":"Agartala, Tripura, India","onclick":"","src":"play-button.jpg"},{"name":"Carmina Barreiro","href":"https:\/\/vimeo.com\/59474994","location":"Sevilla (Spain)","onclick":"return vimeo(this, '59474994')","src":"http:\/\/b.vimeocdn.com\/ts\/413\/353\/413353524_100.jpg"},{"name":"Chuck","href":"http:\/\/youtu.be\/3v8uUUe-oXE","location":"San Francisco","onclick":"return youtube(this, '3v8uUUe-oXE')","src":"https:\/\/img.youtube.com\/vi\/3v8uUUe-oXE\/0.jpg"},{"name":"Allie","href":"http:\/\/vimeo.com\/59422344","location":"Bellingham, WA","onclick":"return vimeo(this, '59422344')","src":"http:\/\/b.vimeocdn.com\/ts\/412\/956\/412956101_100.jpg"},{"name":"John Henry Thompson","href":"http:\/\/youtu.be\/HJmVnWMk-Sw","location":"PA 19066, USA","onclick":"return youtube(this, 'HJmVnWMk-Sw')","src":"https:\/\/img.youtube.com\/vi\/HJmVnWMk-Sw\/0.jpg"},{"name":"Mark Wills","href":"http:\/\/youtu.be\/fGlFTYwKv3A","location":"Greeneville, TN","onclick":"return youtube(this, 'fGlFTYwKv3A')","src":"https:\/\/img.youtube.com\/vi\/fGlFTYwKv3A\/0.jpg"},{"name":"Kevin Frost","href":"https:\/\/vimeo.com\/59420005","location":"Yorkshire, UK","onclick":"return vimeo(this, '59420005')","src":"http:\/\/b.vimeocdn.com\/ts\/412\/938\/412938395_100.jpg"},{"name":"Josh Davis","href":"http:\/\/youtu.be\/WZTjhzGv7M8","location":"Highland Village, TX, US","onclick":"return youtube(this, 'WZTjhzGv7M8')","src":"https:\/\/img.youtube.com\/vi\/WZTjhzGv7M8\/0.jpg"},{"name":"Criz","href":"http:\/\/youtu.be\/ZHlujJ-GHT8","location":"Buenos Aires, Argentina","onclick":"return youtube(this, 'ZHlujJ-GHT8')","src":"https:\/\/img.youtube.com\/vi\/ZHlujJ-GHT8\/0.jpg"},{"name":"John Jairo Arana Suaza","href":"http:\/\/youtu.be\/qnzYzXNNpkg","location":"Colombia","onclick":"return youtube(this, 'qnzYzXNNpkg')","src":"https:\/\/img.youtube.com\/vi\/qnzYzXNNpkg\/0.jpg"},{"name":"Stian Haklev","href":"http:\/\/youtu.be\/fZ024SqocXc","location":"Toronto, Canada","onclick":"return youtube(this, 'fZ024SqocXc')","src":"https:\/\/img.youtube.com\/vi\/fZ024SqocXc\/0.jpg"},{"name":"christel","href":"http:\/\/youtu.be\/7NIJ5kZnnvI","location":"Bluegrass\/Kentucky","onclick":"return youtube(this, '7NIJ5kZnnvI')","src":"https:\/\/img.youtube.com\/vi\/7NIJ5kZnnvI\/0.jpg"},{"name":"Lukas Pollmann","href":"http:\/\/youtu.be\/U8MCy-L4nxA","location":"W\u00fcrzburg (Germany)","onclick":"return youtube(this, 'U8MCy-L4nxA')","src":"https:\/\/img.youtube.com\/vi\/U8MCy-L4nxA\/0.jpg"},{"name":"Robert Drummond","href":"http:\/\/www.youtube.com\/watch?v=9HRW9Ie9n5A","location":"Edinburgh","onclick":"return youtube(this, '9HRW9Ie9n5A')","src":"https:\/\/img.youtube.com\/vi\/9HRW9Ie9n5A\/0.jpg"},{"name":"Cecilia","href":"http:\/\/www.youtube.com\/watch?v=5-Q31OFP8WE","location":"London","onclick":"return youtube(this, '5-Q31OFP8WE')","src":"https:\/\/img.youtube.com\/vi\/5-Q31OFP8WE\/0.jpg"},{"name":"Nina","href":"http:\/\/youtu.be\/fTejZdjHmWs","location":"London ","onclick":"return youtube(this, 'fTejZdjHmWs')","src":"https:\/\/img.youtube.com\/vi\/fTejZdjHmWs\/0.jpg"},{"name":"Cath","href":"https:\/\/vimeo.com\/59382749","location":"Melbourne, Australia","onclick":"return vimeo(this, '59382749')","src":"http:\/\/b.vimeocdn.com\/ts\/412\/659\/412659634_100.jpg"}];                
+            var $container = $('#container');
+            
+            // make an ajax call to fetch more video results
+            var loadNextVideos = function(num) {
+                var $boxes = $();
+                $.each(videos.splice(0, num), function(index, video) {
+                    $boxes = $boxes.add($(window.templates.item({ item: video })));
+                });
+                $container.append($boxes).masonry('reload');
+
+                $boxes.each(function(index, elem) {
+                    setTimeout(function() {
+                        $(elem).find('.loader').fadeOut(function() {
+                            $(elem).find('img').animate({
+                                "margin-top": "0px",
+                                "opacity": 1,
+                            }, 'easeOutQuad');
+                        });
+                    }, index * 50 + Math.random() * 100);
+                });
+            }
+
+            $container.imagesLoaded(function() {
+                $container.masonry({
+                    "itemSelector": '.item',
+                    "column-width": 225,
+                    "isFitWidth": true,
+                });    
+
+                var fit = Math.floor($(window).width() / 225) * Math.floor($(window).height() / 170);
+                var initial = Math.max(5, fit); 
+                loadNextVideos(initial);
+            });
+
+            var block = false;
+            $(window).on('scroll', function(e) {
+                if (block)
+                    return;
+
+                // if we've reached close to the bottom of the page
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 300) {
+                    // prevent making multiple ajax calls
+                    block = true;
+                    loadNextVideos(5);
+                    block = false;
+                }
+            }); 
+        });
+
+        function vimeo(img, id) {
+            $(img).parent().parent().find('img').replaceWith(
+                '<iframe src="http://player.vimeo.com/video/' + id + '?badge=0&autoplay=true" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>'
+            );
+            return false;
+        }
+        function youtube(img, id) {
+            $(img).parent().parent().find('img').replaceWith(
+                '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>'
+            );
+            return false;
+        }
+    </script>
+        
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand brand1" href="http://info.p2pu.org/" target="_blank"></a>
+          <a class="brand brand2" href="http://www.media.mit.edu/" target="_blank"></a>
+          <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./course.html">Overview</a></li>
+            <li><a href="./syllabus.html">Syllabus</a></li>
+            <li class="active"><a href="./participants.html">Participants</a></li>
+            <li><a href="./emails.html">Weekly Emails</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="https://plus.google.com/u/1/communities/106132864609383396284" target="_blank">G+ Community</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div id="step1" class="container">
+    <div class="row">
+    <div class="span12 about">
+    We asked participants in the course to introduce themselves &ndash; here are some of them!
+    </div>
+    </div>
+    <div id="container">
+    </div>
+</div>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=173328602725813";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5757664-13']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  <div id="footer" style="bottom:0px;position: fixed; text-align:right; width:100%;padding-bottom:5px;padding-top:5px;padding-right:20px;background:#C0C0C0;">
+   <footer><small>Video wall based on <em>This is CS50x</em> from the <a href="https://www.edx.org/courses/HarvardX/CS50x/2012/about">CS50x</a> course.</small></footer>
+  </div>
+  </body>
+</html>
