@@ -87,8 +87,8 @@ input.ui-widget-content, input.ui-widget-content:focus{
 .navbar .brand {
   display: block;
   float: left;
-  padding: 20px 20px 10px;
-  margin-left: -20px;
+  padding: 10px 10px 10px;
+  margin-left: -10px;
   font-size: 20px;
   font-weight: 200;
   color: #777777;
