@@ -77,7 +77,6 @@ input.ui-widget-content, input.ui-widget-content:focus{
 
 .navbar .container {
   /* width: auto; */
-  margin-left: 150px;
 }
 
 .nav-collapse.collapse {
@@ -243,9 +242,6 @@ input.ui-widget-content, input.ui-widget-content:focus{
   margin-left: 150px;
 }
 
-.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  margin-left: 140px;
-}
 .navbar-fixed-top {
   top: 0;
 }
