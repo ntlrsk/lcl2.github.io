@@ -243,7 +243,6 @@ input.ui-widget-content, input.ui-widget-content:focus{
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   /* width: 1170px; */
-  margin-left: 150px;
 }
 
 .navbar-fixed-top {
