@@ -79,6 +79,10 @@ input.ui-widget-content, input.ui-widget-content:focus{
   /* width: auto; */
 }
 
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 1000px;
+}
+
 .nav-collapse.collapse {
   height: auto;
   overflow: visible;
