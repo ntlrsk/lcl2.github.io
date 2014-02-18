@@ -550,11 +550,9 @@ input.ui-widget-content, input.ui-widget-content:focus{
     font-size: 16px;
     font-weight: 350;
     line-height: 25px;
-    text-align: justify;
 }
 
 .content .mini-lead {
-    text-align: justify;
 }
 
 .btn-primary {
