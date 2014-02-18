@@ -1,75 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Learning Creative Learning</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/font-awesome-ie7.css" rel="stylesheet">
-    <link href="css/customizations.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="http://learn.media.mit.edu/assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://learn.media.mit.edu/assets/ico/apple-touch-icon-57-precomposed.png">
-
-    <script src='http://www.google-analytics.com/ga.js' type='text/javascript'></script>
-    
-    <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37881026-1']);
-    _gaq.push(['_setDomainName', 'learn.media.mit.edu']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  
-  </script>
-    
-  </head>
-
-  <body>
-
- <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          
-          <div class="nav-collapse collapse">
-          <ul class="nav">
-
-	    <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Overview</a></li>
-            <li><a href="syllabus.html">Syllabus</a></li>
-            <li><a href="participants.html">Participants</a></li>
-            <li><a href="emails.html">Weekly Emails</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="discuss.html">Discuss</a></li>
-
-          </ul>
-          </div><!--/.nav-collapse -->
-          <a class="brand brand1" href="http://info.p2pu.org/" target="_blank"></a>
-          <a class="brand brand2" href="http://www.media.mit.edu/" target="_blank"></a>
-        </div>
-      </div>
-    </div>
-
+---
+layout: lcl1
+title: LCL1 Home Page 
+---
     <div id="step1" class="container">
       <h1><small>The MIT Media Lab & P2PU Present...</small></h1>
       <div style="padding-left:20px;position:relative; bottom: -80px;">
@@ -78,7 +10,7 @@
           <h3 style="color:white;position:relative;z-index:1;width:500px;background:rgba(0,0,0,0.8);padding-left:10px;">><a href="about.html"> About this course</a><br>><a href="course.html"> Week by week outline</a><br>><a href="faq.html"> FAQ</a><br></h3>
       </div>
       <div class="row" style="position: relative; top: -192px;">
-        <div class="span12" style="background-image: url(img/banner.png); height: 355px; width: 1170px; border: 0px;">
+        <div class="span12" style="background-image: url(../img/banner.png); height: 355px; width: 1170px; border: 0px;">
           <div style="width=100%; padding-left:590px;padding-top:20px;">
               <iframe width="560" height="315" src="http://www.youtube.com/embed/QrsIICQ1eg8?rel=0" frameborder="0" wmode="transparent" allowfullscreen></iframe>
           </div>
@@ -414,6 +346,3 @@
         Raven.config('https://fdd281a420224eaea327483d49582429@app.getsentry.com/5018').install();
         window.onerror = Raven.process;
     </script>
-        
-  </body>
-</html>
