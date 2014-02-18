@@ -539,8 +539,3 @@ input.ui-widget-content, input.ui-widget-content:focus{
 .faq h2 {
   padding-top: 1em;
 }
-
-/* Mail Chimp */
-#mc_embed_signup input.email {
-  min-width: 220px;
-}
