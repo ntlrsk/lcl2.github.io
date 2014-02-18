@@ -539,3 +539,10 @@ input.ui-widget-content, input.ui-widget-content:focus{
 .faq h2 {
   padding-top: 1em;
 }
+
+/* Content Font*/
+.content .lead {
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 25px;
+}
