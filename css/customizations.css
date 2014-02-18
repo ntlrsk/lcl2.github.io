@@ -553,6 +553,10 @@ input.ui-widget-content, input.ui-widget-content:focus{
     text-align: justify;
 }
 
+.content .mini-lead {
+    text-align: justify;
+}
+
 .btn-primary {
   width: 250px; 
   height:40px; 
