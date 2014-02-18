@@ -546,3 +546,14 @@ input.ui-widget-content, input.ui-widget-content:focus{
     line-height: 25px;
     text-align: justify;
 }
+
+.btn-primary {
+  width: 250px; 
+  height:40px; 
+  background-color: red;  
+  border: 2px; 
+  border-radius: 5px; 
+  font-family: sans-serif; 
+  font-size: 20px; 
+  color: #fff;
+}
