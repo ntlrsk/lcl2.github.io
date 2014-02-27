@@ -529,6 +529,12 @@ p {
     line-height: 25px;
 }
 
+li {
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 25px;
+}
+
 .about p, .faq p, .main p {
   font-size: 18px;
   text-align: justify;
