@@ -5,7 +5,7 @@ comments: true
 tags: technology LCL2 
 ---
 
-# The Technology we use to run LCL2
+## The Technology we use to run LCL2
 
 Where is the course site hosted?
 
