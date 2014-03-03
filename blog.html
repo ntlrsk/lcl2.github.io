@@ -2,7 +2,23 @@
 layout: blog
 title: Blog 
 ---
-<div class="row">
+<div id="step1" class="container content">
+      <div class="row">
+      <div style="margin-left: 40px; margin-right: 40px; ">
+      <h2>Blog Posts</h2>
+
+  	  <br/>
+
+	<p class="lead">
+		<ul class="posts">
+			{% for post in site.posts %}
+   			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      			{% endfor %}
+		</ul>
+	</p>
+</div>
+
+<!--<div class="row">
     <div class="span12"> 
 	<h2>Blog Posts</h2>
 	<div class="lead">
@@ -13,6 +29,6 @@ title: Blog
 	</ul>
 	</div>
     </div>
-</div>
+</div>-->
 
 
