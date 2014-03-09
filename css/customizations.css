@@ -541,6 +541,9 @@ input.ui-widget-content, input.ui-widget-content:focus{
 }
 
 /*-------------*/
+
+h3{font-size:16px;line-height:25px; text-decoration: underline;}
+
 .content {
   width: 940px;
 }
